@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,29 +21,29 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="176" y="715" width="668" height="238"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <value key="minSize" type="size" width="224.66399999999999" height="10"/>
             <view key="contentView" wantsLayer="YES" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="668" height="238"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView id="110">
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="110">
                         <rect key="frame" x="23" y="128" width="250" height="86"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="logo-mongodb-onwhite" id="111"/>
                     </imageView>
-                    <customView id="141">
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="141">
                         <rect key="frame" x="58" y="71" width="181" height="49"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
-                            <customView id="136" customClass="MDBMBSliderButton">
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="136" customClass="MDBMBSliderButton">
                                 <rect key="frame" x="50" y="11" width="89" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <outlet property="prefpane" destination="-2" id="139"/>
                                 </connections>
                             </customView>
-                            <button id="JOk-ft-r3D">
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOk-ft-r3D">
                                 <rect key="frame" x="7" y="13" width="35" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="switcher-text-off" imagePosition="only" alignment="center" inset="2" id="SWD-Dd-DSp">
@@ -54,7 +54,7 @@
                                     <action selector="clickOnOff:" target="-2" id="MVA-cx-70B"/>
                                 </connections>
                             </button>
-                            <button tag="1" id="LxD-RE-ddx">
+                            <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="LxD-RE-ddx">
                                 <rect key="frame" x="147" y="13" width="26" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="switcher-text-on" imagePosition="only" alignment="center" inset="2" id="VQy-96-LMF">
@@ -67,15 +67,15 @@
                             </button>
                         </subviews>
                     </customView>
-                    <box autoresizesSubviews="NO" wantsLayer="YES" borderType="line" titlePosition="noTitle" id="145">
+                    <box autoresizesSubviews="NO" wantsLayer="YES" fixedFrame="YES" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="145">
                         <rect key="frame" x="297" y="16" width="354" height="210"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView" id="O8d-QH-TdX">
-                            <rect key="frame" x="1" y="1" width="352" height="208"/>
+                            <rect key="frame" x="3" y="3" width="348" height="204"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <button verticalHuggingPriority="750" id="161">
-                                    <rect key="frame" x="18" y="167" width="111" height="25"/>
+                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="161">
+                                    <rect key="frame" x="18.5" y="163" width="111" height="25"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="roundTextured" title="Binary Location" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" inset="2" id="162">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -85,12 +85,12 @@
                                         <action selector="locateBinary:" target="-2" id="189"/>
                                     </connections>
                                 </button>
-                                <box verticalHuggingPriority="750" alphaValue="0.30000000000000016" boxType="separator" id="163">
-                                    <rect key="frame" x="3" y="153" width="346" height="5"/>
+                                <box verticalHuggingPriority="750" fixedFrame="YES" alphaValue="0.30000000000000016" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="163">
+                                    <rect key="frame" x="3" y="149" width="346" height="5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 </box>
-                                <textField verticalHuggingPriority="750" id="164">
-                                    <rect key="frame" x="147" y="169" width="187" height="22"/>
+                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="164">
+                                    <rect key="frame" x="147" y="165" width="187" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="165">
                                         <font key="font" metaFont="system"/>
@@ -98,14 +98,14 @@
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <customView id="172">
-                                    <rect key="frame" x="3" y="4" width="346" height="152"/>
+                                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="172">
+                                    <rect key="frame" x="3" y="0.0" width="346" height="152"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <subviews>
-                                        <scrollView horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="146">
+                                        <scrollView fixedFrame="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="146">
                                             <rect key="frame" x="14" y="23" width="319" height="94"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <clipView key="contentView" id="Rao-70-wJt">
+                                            <clipView key="contentView" ambiguous="YES" id="Rao-70-wJt">
                                                 <rect key="frame" x="1" y="0.0" width="317" height="93"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
@@ -163,11 +163,11 @@
                                                     </tableView>
                                                 </subviews>
                                             </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="149">
+                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="149">
                                                 <rect key="frame" x="-100" y="-100" width="302" height="15"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="147">
+                                            <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="147">
                                                 <rect key="frame" x="302" y="17" width="16" height="76"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -176,7 +176,7 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableHeaderView>
                                         </scrollView>
-                                        <textField verticalHuggingPriority="750" id="127">
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="127">
                                             <rect key="frame" x="14" y="125" width="74" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Options" id="128">
@@ -185,8 +185,8 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <button verticalHuggingPriority="750" id="166">
-                                            <rect key="frame" x="93" y="125" width="21" height="18"/>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="166">
+                                            <rect key="frame" x="93.5" y="125" width="21" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="roundTextured" title="+" bezelStyle="texturedRounded" alignment="center" controlSize="small" state="on" borderStyle="border" inset="2" id="167">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -201,7 +201,7 @@
                             </subviews>
                         </view>
                     </box>
-                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Pn8-UM-TcW">
+                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pn8-UM-TcW">
                         <rect key="frame" x="108" y="62" width="89" height="13"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" focusRingType="none" alignment="center" id="vez-rF-Gcz">
@@ -210,8 +210,8 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button focusRingType="none" verticalHuggingPriority="750" id="O7B-ka-aIf">
-                        <rect key="frame" x="20" y="14" width="58" height="21"/>
+                    <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O7B-ka-aIf">
+                        <rect key="frame" x="20" y="17" width="86" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="rounded" imagePosition="overlaps" alignment="left" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="mqg-RL-bYM">
                             <behavior key="behavior" lightByContents="YES"/>
@@ -221,8 +221,8 @@
                             <action selector="clickVersion:" target="-2" id="Fyk-5M-pzg"/>
                         </connections>
                     </button>
-                    <button focusRingType="none" id="GXz-pw-Dio">
-                        <rect key="frame" x="246" y="20" width="46" height="21"/>
+                    <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GXz-pw-Dio">
+                        <rect key="frame" x="246" y="16" width="46" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <contentFilters>
                             <ciFilter name="CIFalseColor">
